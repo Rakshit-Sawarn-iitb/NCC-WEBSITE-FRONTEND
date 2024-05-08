@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.3s ease-in;
+}
+.cards-container {
+    display: flex;
+    overflow-x:scroll;
+    position: relative;
+    margin-bottom: 5rem;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+.card{
+  .head{
+    font-family: 'Lato';
+  }
+}
+.icons{
+  width: 5%;
+}
+.caps-head{
+  margin-top: 5rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins';
+  font-weight: 800;
+}
+.dark{
+  background: radial-gradient(farthest-side at 80% 50%, #111111bb, #000000ee) no-repeat, url(https://gymkhana.iitb.ac.in/~ncc/images/logos/ncciitb2.png) no-repeat;
+}
+.light{
+  background: radial-gradient(farthest-side at 80% 50%, #00339988, #003399) no-repeat, url(https://gymkhana.iitb.ac.in/~ncc/images/logos/ncciitb1.png) no-repeat;
+}
+#jumbo-container{
+  display: flex;
+  height: 20rem;
+  background-position-x: 80%;
+  background-position-y: center;
+  background-size: auto, 30%;
+  z-index: 501;
+  padding-left: 2rem;
+  color: white;
+
+  .lead{
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .cover-images{
+    .img{
+      width: 80px;
+    }
+  }
+}
+#jumbo-footer{
+  display: flex;
+
+  .add{
+    margin: 3rem;
+    color: white;
+    font-family: 'Raleway';
+  }
+  .links{
+    text-decoration: none;
+    color: white;
+  }
+  .map{
+    margin-top: 2rem;
+    width: 50%;
+    height: 200px;
+  }
+}
+.line{
+  height: 2px;
+  width: 50%;
+}
