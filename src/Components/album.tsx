@@ -24,31 +24,31 @@ function Album() {
       </div>
       <div className="cards-container">
         <ImgMediaCard
-          photo="./assets/cover.jpg"
+          photo="https://gymkhana.iitb.ac.in/~ncc/photo%20gallery/Training%20GC/cover.jpg"
           content="Training is the core of NCC. It is something which will help you build your personality. The smartness of a cadet reflects out when you train yourselves to be a perfect cadet."
           event="Training"
           theme={theme}
         />
         <ImgMediaCard
-          photo="./assets/1.jpeg"
+          photo="https://gymkhana.iitb.ac.in/~ncc/photo%20gallery/cult%20GC/1.JPG"
           content="Culturals is something that connects your soul to body,helps you explore the fun and joyous,cheerful and revived side of you,boosting you for future endeavours it helps you cherish every moment of your life."
           event="Culturals"
           theme={theme}
         />
         <ImgMediaCard
-          photo="./assets/sports.jpg"
+          photo="https://gymkhana.iitb.ac.in/~ncc/photo%20gallery/sports.jpg"
           event="Sports"
           theme={theme}
           content="The discipline you entrail in sports is the discipline you entrail in life. The way you play, the way you become."
         />
         <ImgMediaCard
-          photo="./assets/37adv.jpg"
+          photo="https://gymkhana.iitb.ac.in/~ncc/photo%20gallery/37adv.jpg"
           event="Adventure"
           theme={theme}
           content="NCC cadets are given the opportunity to participate in a host of adventure activities including Mountain Treks and Expeditions, Trekking, Parasailing, Sailing, Scuba Diving, Kayaking, Camel safari etc"
         />
         <ImgMediaCard
-          photo="./assets/2.jpg"
+          photo="https://gymkhana.iitb.ac.in/~ncc/photo%20gallery/social/2.jpg"
           event="Social"
           theme={theme}
           content="Social works and activities refer to efforts aimed at improving the well-being of individuals, communities, or society as a whole. Engaging in social works and activities can have a positive impact on society and contribute to creating a more equitable and just world."
