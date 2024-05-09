@@ -40,7 +40,7 @@ function ResponsiveAppBar(Props:Props) {
     <AppBar position="sticky" sx={{ background: Props.theme === 'light' ? '#003399' : '#111111' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img src="/public/nccimg1.svg" alt="" style={{width:'30px'}}/>
+          <img src="https://gymkhana.iitb.ac.in/~ncc/images/logos/nccimg1.svg" alt="" style={{width:'30px'}}/>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none',justifyContent:'flex-end' } }}>
             <IconButton
               size="large"
