@@ -6,7 +6,7 @@ function App(){
         <Router>
             <div>
                 <Routes>
-                    <Route path='/albums' element={<Album/>}/>
+                    <Route path='/' element={<Album/>}/>
                 </Routes>
             </div>
         </Router>
