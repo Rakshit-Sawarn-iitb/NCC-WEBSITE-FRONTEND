@@ -1,0 +1,20 @@
+#jumbo-container{
+    display: flex;
+    height: 20rem;
+    background-position-x: 80%;
+    background-position-y: center;
+    background-size: auto, 30%;
+    z-index: 501;
+    padding-left: 2rem;
+    color: white;
+  
+    .lead{
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+    .cover-images{
+      .img{
+        width: 80px;
+      }
+    }
+  }

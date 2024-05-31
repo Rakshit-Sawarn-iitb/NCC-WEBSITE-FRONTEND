@@ -1,0 +1,40 @@
+.years{
+    display: flex;
+    justify-content: space-around;
+    overflow-x:scroll;
+    position: relative;
+    margin-bottom: 5rem;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    span{
+        display: flex;
+        border-radius: 8px;
+    min-width: 100px;
+    font-weight: 600;
+    font-size: larger;
+    cursor: pointer;
+    margin: 1rem;
+    font-family: 'Lato';
+    align-items: center;
+    justify-content: center;
+}
+span.active{
+    font-weight: 800;
+}
+}
+
+.content-wrap{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: larger;
+
+    div{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 6rem;
+    }
+}

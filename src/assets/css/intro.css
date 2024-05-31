@@ -1,0 +1,12 @@
+.font-dark-mode-head{
+    color: rgb(68, 157, 68);
+}
+.font-light-mode-head{
+    color:#003399;
+}
+.font-dark-mode-body{
+    color:white;
+}
+.font-light-mode-body{
+    color: black;
+}

@@ -6,26 +6,26 @@
     padding: 0;
     transition: 0.3s ease-in;
 }
-.cards-container {
-    display: flex;
-    overflow-x:scroll;
-    position: relative;
-    margin-bottom: 5rem;
-    
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-.card{
-  .head{
-    font-family: 'Lato';
-  }
+.dark{
+  background: radial-gradient(farthest-side at 80% 50%, #111111bb, #000000ee) no-repeat, url(https://gymkhana.iitb.ac.in/~ncc/images/logos/ncciitb2.png) no-repeat;
 }
-.icons{
-  width: 5%;
+.light{
+  background: radial-gradient(farthest-side at 80% 50%, #00339988, #003399) no-repeat, url(https://gymkhana.iitb.ac.in/~ncc/images/logos/ncciitb1.png) no-repeat;
 }
-.caps-head{
+.line-dark{
+  height: 2px;
+  width: 50%;
+  background-color: rgb(68, 157, 68);
+  margin-bottom: 2rem;
+}
+.line-light{
+  height: 2px;
+  width: 50%;
+  background-color: #003399;
+  margin-bottom: 2rem;
+}
+.caps-head-dark{
+  color: #fff;
   margin-top: 5rem;
   margin-bottom: 0.8rem;
   display: flex;
@@ -33,51 +33,13 @@
   font-family: 'Poppins';
   font-weight: 800;
 }
-.dark{
-  background: radial-gradient(farthest-side at 80% 50%, #111111bb, #000000ee) no-repeat, url(https://gymkhana.iitb.ac.in/~ncc/images/logos/ncciitb2.png) no-repeat;
-}
-.light{
-  background: radial-gradient(farthest-side at 80% 50%, #00339988, #003399) no-repeat, url(https://gymkhana.iitb.ac.in/~ncc/images/logos/ncciitb1.png) no-repeat;
-}
-#jumbo-container{
-  display: flex;
-  height: 20rem;
-  background-position-x: 80%;
-  background-position-y: center;
-  background-size: auto, 30%;
-  z-index: 501;
-  padding-left: 2rem;
-  color: white;
 
-  .lead{
-    font-size: 1.25rem;
-    font-weight: 300;
-  }
-  .cover-images{
-    .img{
-      width: 80px;
-    }
-  }
-}
-#jumbo-footer{
+.caps-head-light{
+  color: #000;
+  margin-top: 5rem;
+  margin-bottom: 0.8rem;
   display: flex;
-
-  .add{
-    margin: 3rem;
-    color: white;
-    font-family: 'Raleway';
-  }
-  .links{
-    text-decoration: none;
-    color: white;
-  }
-  .map{
-    margin-top: 2rem;
-    width: 50%;
-    height: 200px;
-  }
-}
-.line{
-  height: 2px;
-  width: 50%;
+  justify-content: center;
+  font-family: 'Poppins';
+  font-weight: 800;
 }
