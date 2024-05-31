@@ -3,12 +3,14 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
+import '/src/assets/css/footer.css';
 interface Props{
     theme:string;
 }
 function Social(Props:Props){
+    const dynamicClass = (Props.theme==='light')? 'footer-light':'footer-dark';
     return(
-        <div style={{backgroundColor:Props.theme==='light'?'#003399':'#111111'}} id="jumbo-footer" className="justify-content-center flex-column">
+        <div id="jumbo-footer" className={`justify-content-center flex-column ${dynamicClass}`}>
             <div className="d-flex flex-row flex-wrap justify-content-center">
                 <div className="add d-flex flex-column col-sm-4" >
                     <span style={{fontSize:'x-large', fontWeight:600}}>National Cadet Corps IIT Bombay</span>

@@ -1,26 +1,23 @@
 import * as React from 'react';
-import ResponsiveAppBar from "./navbar";
 import ImgMediaCard from "./card";
 import Social from "./footer";
 import "bootstrap/dist/css/bootstrap.css";
 import Cover from "./cover";
+import '/src/assets/css/album.css'
 
-
-function Album() {
-  const [theme, setTheme] = React.useState<'light' | 'dark'>('light');
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
+interface Props{
+  theme:string;
+}
+function Album({theme}:Props) {
   React.useEffect(() => {
     document.body.style.backgroundColor = theme === 'light' ? '#fff' : '#000'; // Adjust colors as needed
   }, [theme]);
   return (
     <div>
-      <ResponsiveAppBar theme={theme} toggleTheme={toggleTheme}/>
       <Cover theme={theme}/>
       <div className='d-flex flex-column align-items-center justify-content-center'>
-        <h1 className="caps-head" style={{color:(theme==='light'?'#000':'#fff')}}>PHOTO GALLERY</h1>
-        <div style={{backgroundColor:(theme==='light'?'#003399':'rgb(68, 157, 68)'), marginBottom:'2rem'}} className="line"></div>
+        <h1 className={(theme==='light'?'caps-head-light':'caps-head-dark')}>PHOTO GALLERY</h1>
+        <div className={(theme==='light'?'line-light':'line-dark')}></div>
       </div>
       <div className="cards-container">
         <ImgMediaCard

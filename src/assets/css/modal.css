@@ -1,0 +1,32 @@
+.message-dark{
+    font-weight: bolder;
+    color:white;
+    font-size:xx-large;
+}
+.message-light{
+    font-weight: bolder;
+    color:black;
+    font-size: xx-large;
+}
+.grad-dark{
+    color:white;
+}
+.grad-light{
+    color: black;
+}
+.button-modal-light{
+    color: white;
+    font-weight: bold;
+    background-color: #003399;
+}
+.button-modal-dark{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(68, 157, 68);
+}
+.modal-dark{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-light{
+    background-color: white;
+}

@@ -1,0 +1,17 @@
+.form-wrapper{
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    border-radius: 2%;
+}
+
+.heading{
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+.button-light{
+    background-color: #003399;
+}
+.button-dark{
+    background-color: rgb(68, 157, 68);
+}

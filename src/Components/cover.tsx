@@ -1,3 +1,5 @@
+import '/src/assets/css/cover.css';
+
 interface Props{
     theme:string;
 }

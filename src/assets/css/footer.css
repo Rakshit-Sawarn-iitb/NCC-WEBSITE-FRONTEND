@@ -1,0 +1,24 @@
+#jumbo-footer{
+    display: flex;
+  
+    .add{
+      margin: 3rem;
+      color: white;
+      font-family: 'Raleway';
+    }
+    .links{
+      text-decoration: none;
+      color: white;
+    }
+    .map{
+      margin-top: 2rem;
+      width: 50%;
+      height: 200px;
+    }
+  }
+.footer-light{
+  background-color: #003399;
+}
+.footer-dark{
+  background-color: #111111;
+}

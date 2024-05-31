@@ -1,0 +1,13 @@
+.cards-container {
+    display: flex;
+    overflow-x:scroll;
+    position: relative;
+    margin-bottom: 5rem;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+.icons{
+    width: 5%;
+  }
