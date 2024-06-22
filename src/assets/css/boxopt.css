@@ -1,0 +1,48 @@
+.options-wrapper-light{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #003399;
+    color: white;
+    border-radius: 0.3rem;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 2rem;
+    padding: 1rem;
+
+    .opt-text{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        cursor: pointer;
+        font-weight: 500;
+        font-family: 'Raleway';
+    }
+}
+
+.options-wrapper-dark{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(68, 157, 68);
+    color: black;
+    border-radius: 0.3rem;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 2rem;
+    padding: 1rem;
+
+    .opt-text{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        cursor: pointer;
+        font-weight: 500;
+        font-family: 'Raleway';
+    }
+}

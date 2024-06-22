@@ -1,6 +1,4 @@
 import * as React from "react";
-import Cover from "./cover";
-import Social from "./footer";
 import Timeline from "./timeline";
 
 interface Props{
@@ -13,7 +11,6 @@ function Council({theme}:Props) {
   }, [theme]);
   return (
     <div>
-      <Cover theme={theme} />
       <div className="d-flex flex-column align-items-center justify-content-center">
         <h1
           className={theme === "light" ? "caps-head-light" : "caps-head-dark"}
@@ -23,7 +20,6 @@ function Council({theme}:Props) {
         <div className={theme === "light" ? "line-light" : "line-dark"}></div>
       </div>
       <Timeline theme={theme} />
-      <Social theme={theme} />
     </div>
   );
 }

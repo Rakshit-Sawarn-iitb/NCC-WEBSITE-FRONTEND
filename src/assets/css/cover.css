@@ -13,8 +13,16 @@
       font-weight: 300;
     }
     .cover-images{
+      margin-left: 5rem;
+      width: 50%;
       .img{
-        width: 80px;
+        width: 6rem;
+        margin-left: 3rem;
+        margin-right: 4rem;
+      }
+      .img1{
+        width:4rem;
+        margin-right: 4rem;
       }
     }
   }

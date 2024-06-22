@@ -1,0 +1,29 @@
+.accordion-wrapper {
+    width: 100%;
+    max-width: 550px;
+    border: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.459)!important; /* Bootstrap-like shadow */
+    height: fit-content;
+    padding: 1rem;
+    transition: height 0.4s ease-in;
+    border-radius: 0.5rem;
+    margin: 1rem auto; /* Center the accordion-wrapper horizontally */
+  }
+  
+  @media (max-width: 768px) {
+    .accordion-wrapper {
+      max-width: 90%; /* Adjust max-width for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .accordion-wrapper {
+      max-width: 95%; /* Adjust max-width for mobile devices */
+    }
+  }
+.light-mode-wrapper{
+    box-shadow: 0 0 1rem #003399a8!important; /* Bootstrap-like shadow */
+}
+.dark-mode-wrapper{
+    box-shadow: 0 0 1rem rgba(68, 157, 68, 0.498)!important; /* Bootstrap-like shadow */
+}

@@ -1,14 +1,11 @@
-import '/src/assets/css/cover.css';
+import "/src/assets/css/cover.css";
 
-interface Props{
-    theme:string;
+interface Props {
+  theme: string;
 }
-function Cover(Props:Props) {
+function Cover(Props: Props) {
   return (
-    <div
-        className={Props.theme}
-      id="jumbo-container"
-    >
+    <div className={Props.theme} id="jumbo-container">
       <div className="d-flex flex-column justify-content-center">
         <h5 className="h5">राष्ट्रीय कैडेट कोर आइआइटी बोम्बे</h5>
         <h3 className="h3">National Cadet Corps IIT Bombay</h3>
