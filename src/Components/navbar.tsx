@@ -12,32 +12,31 @@ import MenuItem from '@mui/material/MenuItem';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 interface Props {
   theme: string;
   toggleTheme: () => void;
-  user: boolean;
-  setLoginShow: (show: boolean) => void;
-  setLogoutShow: (show: boolean) => void;
 }
 
-function ResponsiveAppBar({ theme, toggleTheme, user, setLoginShow, setLogoutShow }: Props) {
+function ResponsiveAppBar({ theme, toggleTheme}: Props) {
   const pages = ['Home', 'Blog', 'Alumni Registration', 'FAQs', 'Albums', 'Book of Records', 'Council'];
-  if (user) {
-    pages.push('Notifications');
-    pages.push('Logout');
-    const alumIndex = pages.indexOf('Alumni Registration');
-    if (alumIndex > -1) {
-      pages.splice(alumIndex, 1);
-    }
-  } else {
-    pages.push('Login');
-  }
+
+  const pathMap: { [key: string]: string } = {
+    'Home': '/',
+    'Blog': '/blog',
+    'Alumni Registration': '/alum',
+    'FAQs': '/faqs',
+    'Albums': '/album',
+    'Book of Records': '/records',
+    'Council': '/council',
+    'Cadets Corner': '/corner',
+  };
 
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -50,17 +49,7 @@ function ResponsiveAppBar({ theme, toggleTheme, user, setLoginShow, setLogoutSho
   };
 
   const handleMenuItemClick = (page: string) => {
-    if (page === 'Login') {
-      setLoginShow(true);
-    } else if (page === 'Logout') {
-      setLogoutShow(true);
-    } else if (page === 'Council') {
-      navigate('/council');
-    } else if (page === 'Alumni Registration') {
-      navigate('/alum');
-    } else if (page === 'Albums') {
-      navigate('/album');
-    }
+    navigate(pathMap[page]);
     handleCloseNavMenu();
   };
 
@@ -106,7 +95,11 @@ function ResponsiveAppBar({ theme, toggleTheme, user, setLoginShow, setLogoutSho
                 sx={{ display: { xs: 'block', md: 'none' } }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={() => handleMenuItemClick(page)}>
+                  <MenuItem 
+                    key={page} 
+                    onClick={() => handleMenuItemClick(page)}
+                    selected={location.pathname === pathMap[page]}
+                  >
                     <Typography textAlign="center">{page}</Typography>
                   </MenuItem>
                 ))}
@@ -114,7 +107,17 @@ function ResponsiveAppBar({ theme, toggleTheme, user, setLoginShow, setLogoutSho
             </Box>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
-                <Button key={page} sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => handleMenuItemClick(page)}>
+                <Button 
+                  key={page} 
+                  sx={{ 
+                    my: 2, 
+                    color: 'white',
+                    backgroundColor: location.pathname === pathMap[page] ? (theme === 'light' ? '#dcdcdc54' : '#444444') : 'transparent',  
+                    borderRadius: '4px', 
+                    display: 'block' 
+                  }} 
+                  onClick={() => handleMenuItemClick(page)}
+                >
                   {page}
                 </Button>
               ))}
